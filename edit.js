@@ -1,10 +1,10 @@
 
 firebase.initializeApp(firebaseConfig)
 const auth=firebase.auth()
-const ADD_QUES=ROOT_URL+"/api/quiz/add-ques"
-const DELETE_QUES=ROOT_URL+"/api/quiz/delete-ques"
-const COUNT_QUES=ROOT_URL+"/api/quiz/count-all-ques"
-const LIMIT_QUES=ROOT_URL+"/api/quiz/limit-all-ques"
+const ADD_QUES=ROOT_URL+"/api/quiz/add-ques.php"
+const DELETE_QUES=ROOT_URL+"/api/quiz/delete-ques.php"
+const COUNT_QUES=ROOT_URL+"/api/quiz/count-all-ques.php"
+const LIMIT_QUES=ROOT_URL+"/api/quiz/limit-all-ques.php"
 
 
 /* customisable variable */
@@ -103,9 +103,9 @@ clearForm.addEventListener("click", ()=>{
 
 
 const deleteQues=id=>{
-delPath=DELETE_QUES+".php?uid="+userID+"&id="+id
-let confirmRes=confirm("Are you sure you want to delete this question!");
-  if (confirmRes == true) {
+delPath=DELETE_QUES+'?uid='+userID+'&id='+id
+let confirmRes=confirm("Are you sure you want to delete this question!");
+  if (confirmRes == true) {
     fetch(delPath).then(res=>res.json())
     .then(res=>alertBS(res.message))
     .catch(err=>alertBS(err))
