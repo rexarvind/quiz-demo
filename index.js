@@ -10,7 +10,7 @@ measurementId:"G-CCNCD2RK1F"}
 firebase.initializeApp(firebaseConfig)
 const auth=firebase.auth()
 
-const ROOT_URL="https://rex-arvind.000webhostapp.com"
+const ROOT_URL="https://client90.000webhostapp.com"
 const ADD_USER=ROOT_URL+"/api/quiz/add-user"
 const COUNT_HIGH_SCORE=ROOT_URL+"/api/quiz/count-high-score"
 const LIMIT_HIGH_SCORE=ROOT_URL+"/api/quiz/limit-high-score.php"
