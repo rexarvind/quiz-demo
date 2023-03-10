@@ -1,0 +1,23 @@
+
+.answer:hover{background:#eee}
+
+.form-control:focus{border-color:#343a40;
+box-shadow:0 0 0 0.2rem rgba(52,58,64,0.25)}
+
+.form-check-input:focus{border-color:#343a40;
+box-shadow:0 0 0 0.2rem rgba(52,58,64,0.25)}
+
+.form-check-input:checked{border-color:#343a40;background-color:#343a40}
+
+.form-file-input:focus-within ~ .form-file-label{
+border-color:#343a40;
+box-shadow:0 0 0 0.2rem rgba(52,58,64,0.25)}
+
+.btn-close:hover, .btn-close.active, .btn-close:active {box-shadow:0 0 0 0.25rem rgba(52,58,64,0.25)}
+
+
+.page-item.active .page-link{
+background-color:#343a40;
+border-color: #eee}
+
+.page-item .page-link{color:#343a40}

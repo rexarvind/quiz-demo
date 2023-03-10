@@ -1,0 +1,144 @@
+<!doctype html><html lang="en" class="h-100">
+<head><meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Annual Developer Quiz</title>
+<link rel="stylesheet" href="../lib/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+</head><body class="d-flex flex-column h-100 bg-dark">
+<header>
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark py-0 border-bottom border-secondary shadow">
+<div class="container-lg">
+<a class="navbar-brand font-weight-bold mx-auto py-1" href="index.html">RexArvind<span class="text-muted">.me/</span>Quiz</a>
+</div>
+</nav>
+</header>
+
+<main class="flex-shrink-0 pt-2">
+
+<div id="guestCard" class="d-none">
+
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-sm-8 col-lg-5">
+
+<div class="card mt-5 mb-2 mx-auto">
+<span class="card-header h5 text-center">Add &amp; Update Questions</span>
+<div class="card-body">
+<p>This is the admin area of Annual Developer Quiz, login with your registered email to continue.</p>
+</div>
+<div class="card-footer">
+<button id="loginBtn" class="btn btn-dark btn-block">Login</button>
+</div>
+</div> <!-- card -->
+
+</div> <!-- col -->
+</div> <!-- row -->
+</div> <!-- container -->
+
+</div> <!-- guestCard -->
+
+
+
+
+
+
+<div id="userCard" class="d-none mb-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-sm-8 col-lg-5">
+
+<div class="card mt-5 mb-2 mx-auto">
+<span class="card-header h5">Total Questions: <span id="totalQuesAdded">...</span></span>
+
+<div class="card-body">
+<input type="hidden" id="quesID" value="">
+
+<label class="form-label mb-0">Enter Question</label>
+<div id="ques" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+<label class="form-label mb-0">Choice 1.</label>
+<div id="ans1" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+<label class="form-label mb-0">Choice 2.</label>
+<div id="ans2" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+<label class="form-label mb-0">Choice 3.</label>
+<div id="ans3" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+<label class="form-label mb-0">Choice 4.</label>
+<div id="ans4" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+
+<label for="correct" class="form-label mb-0">Enter correct choice number</label>
+<div class="input-group mb-3">
+<span class="input-group-text">Correct Choice No.</span>
+<input type="number" min="1" max="4" class="form-control" id="correct">
+</div>
+
+<label class="form-label mb-0">Answer Description</label>
+<div id="desc" class="form-control overflow-auto mb-3" style="max-height:99px;white-space:pre-wrap" contenteditable="true"></div>
+
+
+</div>
+<div class="card-footer">
+<button id="submitBtn" class="btn btn-dark btn-block">Submit Question</button>
+<button id="clearForm" class="btn btn-outline-dark btn-block mt-2">Clear All Fields</button>
+</div>
+</div> <!-- card -->
+
+</div> <!-- col -->
+</div> <!-- row -->
+</div> <!-- container -->
+
+<div class="container mt-4">
+<ul class="pagination flex-wrap justify-content-center" id="paginationBtns">
+</ul>
+</div>
+
+<div class="container-lg mb-5">
+<div class="row g-2 mb-5" id="results_box"></div>
+</div>
+
+</div> <!-- userCard -->
+
+
+<!-- logout btn start -->
+<div class="position-fixed bottom-0 left-0 m-2">
+<button id="logoutBtn" class="btn btn-danger btn-sm border-secondary d-none">Logout</button>
+</div>
+<!-- logout btn end -->
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<!-- custom alert modal start -->
+<div class="modal fade" id="alertBSModal" tabindex="-1" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header py-2">
+<h5 class="modal-title">Information &#33;</h5>
+<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+</div>
+<div id="alertBSBody" class="modal-body">
+</div>
+<div class="modal-footer py-2">
+<button data-dismiss="modal" class="btn btn-outline-dark w-50">Close</button>
+</div>
+</div> <!-- modal-content -->
+</div> <!-- modal-dialog --> 
+</div> <!-- modal -->
+<!-- custom alert modal end -->
+
+
+</main>
+
+<footer class="footer mt-auto py-2 bg-dark text-muted text-center border-top border-secondary">
+<div class="container">
+<a href="https://rexarvind.github.io/" target="_blank" rel="noopener noreferrer" class="link-secondary text-decoration-none">RexArvind Web Services &copy; <span id="copyYear"></span></a>
+</div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script src="../lib/bootstrap.bundle.min.js"></script>
+<script src="edit.js"></script>
+</body></html>
