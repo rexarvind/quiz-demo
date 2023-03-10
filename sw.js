@@ -1,3 +1,9 @@
-self.addEventListener("install",e=>console.log("sw installed"))
-self.addEventListener("activate",e=>console.log("sw activated"))
-self.addEventListener("fetch",e=>console.log("fetch evt",e))
+self.addEventListener('install', function(e){
+    // service worker installed
+});
+self.addEventListener('activate', function(e){
+    // service worker activated
+});
+self.addEventListener('fetch', function(e){
+    // fetch event
+});

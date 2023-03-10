@@ -1,15 +1,6 @@
-var firebaseConfig={
-apiKey:"AIzaSyAIBhvdbyFlTqZLgtNA7uTWHymjHOpzyMU",
-authDomain:"rexarvind.firebaseapp.com",
-databaseURL:"https://rexarvind.firebaseio.com",
-projectId:"rexarvind",
-storageBucket:"rexarvind.appspot.com",
-messagingSenderId:"685927662051",
-appId:"1:685927662051:web:252add00d42a851bc320d6",
-measurementId:"G-CCNCD2RK1F"}
+
 firebase.initializeApp(firebaseConfig)
 const auth=firebase.auth()
-const ROOT_URL="https://rex-arvind.000webhostapp.com"
 const ADD_QUES=ROOT_URL+"/api/quiz/add-ques"
 const DELETE_QUES=ROOT_URL+"/api/quiz/delete-ques"
 const COUNT_QUES=ROOT_URL+"/api/quiz/count-all-ques"
