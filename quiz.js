@@ -1,4 +1,3 @@
-const ROOT_URL="https://client90.000webhostapp.com"
 const QUIZAPI=ROOT_URL+"/api/quiz/get-ques.php"
 const ADD_SCORE=ROOT_URL+"/api/quiz/add-score.php"
 const CORRECT_BONUS=4
