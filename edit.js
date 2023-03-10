@@ -107,7 +107,12 @@ delPath=DELETE_QUES+'?uid='+userID+'&id='+id
 let confirmRes=confirm("Are you sure you want to delete this question!");
   if (confirmRes == true) {
     fetch(delPath).then(res=>res.json())
-    .then(res=>alertBS(res.message))
+    .then(function(res){
+        if(res.status){
+            window.location.href = window.location.href;
+        }
+        alertBS(res.message)
+    })
     .catch(err=>alertBS(err))
   }
 }
