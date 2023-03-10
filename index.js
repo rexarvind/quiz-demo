@@ -11,10 +11,10 @@ firebase.initializeApp(firebaseConfig)
 const auth=firebase.auth()
 
 const ROOT_URL="https://client90.000webhostapp.com"
-const ADD_USER=ROOT_URL+"/api/quiz/add-user"
-const COUNT_HIGH_SCORE=ROOT_URL+"/api/quiz/count-high-score"
+const ADD_USER=ROOT_URL+"/api/quiz/add-user.php"
+const COUNT_HIGH_SCORE=ROOT_URL+"/api/quiz/count-high-score.php"
 const LIMIT_HIGH_SCORE=ROOT_URL+"/api/quiz/limit-high-score.php"
-const USER_ANS=ROOT_URL+"/api/quiz/user-ans/"
+const USER_ANS=ROOT_URL+"/api/quiz/user-ans.php"
 
 /* high score results per page */
 let rpp = 6;
