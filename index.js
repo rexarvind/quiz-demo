@@ -293,7 +293,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 const userAns=(el)=>{
   el.classList.add("disabled")
-  fetch(USER_ANS+userID).then(res=>res.json())
+  fetch(USER_ANS+ '?uid=' + userID).then(res=>res.json())
   .then(res=>{
     if(res.status==true){
       if(res.data==null){
