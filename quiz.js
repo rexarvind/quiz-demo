@@ -1,5 +1,5 @@
 const ROOT_URL="https://client90.000webhostapp.com"
-const QUIZAPI=ROOT_URL+"/api/quiz/get-ques/"
+const QUIZAPI=ROOT_URL+"/api/quiz/get-ques.php"
 const ADD_SCORE=ROOT_URL+"/api/quiz/add-score"
 const CORRECT_BONUS=4
 const MAX_TIME=30
@@ -46,7 +46,7 @@ sessionStorage.clear()
 
 
 /* fetch questions fron database with user id */
-quizPath=QUIZAPI+userID
+quizPath=QUIZAPI + '?uid=' + userID;
 fetch(quizPath).then(res=>res.json())
 .then(res=>checkQues(res))
 .catch(err=>{
