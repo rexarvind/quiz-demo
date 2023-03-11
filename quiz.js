@@ -176,8 +176,7 @@ const showAns=()=>{
     }
   })
   /* show answer description */
-console.log(currentQues.desc)
-  if(currentQues.desc){
+  if(currentQues.desc.length){
       description.classList.remove("d-none")
     description.innerHTML=currentQues.desc
   }
@@ -286,8 +285,10 @@ answers.forEach((answer)=>{
   }
 
   /* show answer description */
-  description.classList.remove("d-none")
-  description.innerHTML=currentQues.desc
+  if(currentQues.desc.length){
+      description.classList.remove("d-none")
+    description.innerHTML=currentQues.desc
+  }
 
   /* stop timer as answer is displayed */
   clearInterval(timer)
