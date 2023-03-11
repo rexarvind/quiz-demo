@@ -21,6 +21,7 @@ const nextQuesBtn=_("nextQuesBtn")
 const question=_("question")
 const answers=qsa(".answer")
 const description=_("description")
+const quiz_progress = _("quiz_progress");
 
 /* define variables */
 let score=quesCounter=0;
@@ -206,7 +207,8 @@ const getNewQues=()=>{
 
   /* update question counter */
   quesCounter++;
-  remainingQues.innerHTML=quesCounter+" of "+MAX_QUES
+  remainingQues.innerHTML=quesCounter+" of "+MAX_QUES;
+  quiz_progress.style.width = Math.round((quesCounter / MAX_QUES) * 100) + '%';
 
   /* button disabled to stop skipping question */
   nextQuesBtn.disabled="true"
