@@ -45,6 +45,24 @@
                         <span class="card-header h5 text-center">Feedback</span>
                         <div class="card-body">
                             <p>If you have any feedback then feel free to contact us.</p>
+
+                            <form method="post" action="https://formsubmit.co/">
+                                <div class="mb-3">
+                                    <label>Name</label>
+                                    <input type="text" name="" class="form-control" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Subject</label>
+                                    <input type="text" name="" class="form-control" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Feedback</label>
+                                    <textarea name="" rows="4" class="form-control" required></textarea>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false" />
+                                <button type="submit" class="btn btn-lg w-100 btn-dark">Submit</button>
+                            </form>
+
                         </div>
                     </div> <!-- card -->
                 </div> <!-- col -->
