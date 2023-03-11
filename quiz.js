@@ -176,8 +176,10 @@ const showAns=()=>{
     }
   })
   /* show answer description */
-  description.classList.remove("d-none")
-  description.innerHTML=currentQues.desc
+  if(currentQues.desc.length){
+      description.classList.remove("d-none")
+    description.innerHTML=currentQues.desc
+  }
 
   /* enable button to get new question */
   nextQuesBtn.disabled=""
