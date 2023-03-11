@@ -52,6 +52,10 @@ fetch(quizPath).then(res=>res.json())
   document.location.href="index.html"
 })
 
+window.onblur = function(e) {
+  document.location.href="index.html"
+};
+
 
 /* check question before starting quiz */
 const checkQues=res=>{
