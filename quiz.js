@@ -176,7 +176,8 @@ const showAns=()=>{
     }
   })
   /* show answer description */
-  if(currentQues.desc.length){
+console.log(currentQues.desc)
+  if(currentQues.desc){
       description.classList.remove("d-none")
     description.innerHTML=currentQues.desc
   }
