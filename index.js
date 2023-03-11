@@ -219,45 +219,6 @@ fetch(COUNT_HIGH_SCORE)
 
 
 
-const buyQuiz=()=>{
-buyText=`<b>Features of this quiz:</b><br>
-<ol>
-<li>No limit on generating certificates. Google Forms limits to 100 per day.</li>
-<li>Show high scores with photo and pagination.</li>
-<li>Password less login to start the quiz.</li>
-<li>Collect emails of participants behind the scenes.</li>
-<li>Show answer description, remaining time, remaining questions, and more.</li>
-<li>Buy once and make unlimited number of quizzes and certificates.</li>
-<li>Secure JavaScript code with deadlock protection.</li>
-<li>Using tokens instead of sessions for better login system.</li>
-<li>Styled with latest version of Twitter Bootstrap (v5).</li>
-<li>Lightweight and Faster with Vanilla JavaScript (No jQuery).</li>
-<li>Clean UI and UX.</li>
-<li>Responsive design.</li>
-<li>Built with Ajax, Fetch, Arrow Functions, Prepared Statements, OOP, JSON.</li>
-<li>Well commented JavaScript code.</li>
-<li>Free lifetime hosting with GitHub and Netlify.</li>
-</ol>
-
-<b>Pricing details:</b>
-<ul>
-<li><b>&#8377; 1,000</b> Get your quiz online with one customised certificate.</li>
-<li><b>&#8377; 1,500</b> Get your quiz online with two customised certificates.</li>
-<li><b>&#8377; 2,000</b> Get your quiz online with four customised certificates.</li>
-</ul>
-
-<b>Contact for more details:</b>
-<br>
-Arvind Kumar<br>
-Founder of RexArvind Web Services<br>
-Whatsapp: &plus;91 8181 040 977
-`
-
-alertBS(buyText)
-
-}
-
-
 
 if ('serviceWorker' in navigator){
   navigator.serviceWorker
