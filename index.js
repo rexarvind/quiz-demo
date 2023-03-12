@@ -116,6 +116,7 @@ const startQuiz = () => {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       resStatus = JSON.parse(xhr.responseText)
+      alert(xhr.responseText);
       playBtn.disabled = "true"
       playBtn.innerText = "Redirecting..."
       checkStatus(resStatus)
