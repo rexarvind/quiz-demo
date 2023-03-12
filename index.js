@@ -288,7 +288,7 @@ finalPageBtn.addEventListener("click", ()=>{
 
 const updateViews=()=>{
 const pageViews=_("page-views")
-fetch('https://api.countapi.xyz/update/rexarvind/home/?amount=1').then(res =>res.json())
+fetch('https://api.countapi.xyz/update/kesava/website?amount=1').then(res =>res.json())
 .then(res=>{pageViews.innerText = res.value})
 .catch(err=>{pageViews.innerText=err})
 }
